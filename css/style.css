@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 10px 0;
+}
+
+img {
+  100%
+}
+
+/* Navbar */
+.navbar {
+  background-color: #35424a;
+  height: 100px;
+  border-bottom: 3px #e84934 solid;
+}
+
+.navbar .flex {
+  justify-content: space-between;
+}
+
+.navbar h1 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.navbar h1 span {
+  color: #e84934;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.navbar a:hover {
+  border-bottom: 2px #fff solid;
+}
+
+/* Showcase */
+.showcase {
+  height: 400px;
+  background: url(../images/showcase.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.showcase .flex {
+  flex-direction: column;
+}
+
+.showcase h1 {
+  font-size: 50px;
+}
+
+.showcase p {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Newsletter */
+.newsletter {
+  height: 100px;
+  background-color: #35424a;
+  color: #fff;
+}
+
+.newsletter .flex {
+  justify-content: space-between;
+}
+
+.newsletter h3 {
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.newsletter form {
+  display: flex;
+}
+
+.newsletter input {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+}
+
+.newsletter input[type="button"] {
+  background-color: #e8491d;
+}
+
+/* Skills */
+.skills {
+  height: 300px;
+  text-align: center;
+}
+
+.skills .grid {
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.skills img {
+  height: 100px;
+}
+
+.skills h4 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.skills p {
+  font-size: 15px;
+  letter-spacing: 1.6;
+}
+
+/* Footer */
+footer {
+  font-size: 18px;
+  color: #fff;
+  background-color: #E8491D;
+  text-align: center;
+}
+
+footer .container {
+  padding: 30px;
+}
+
+/* Utilities */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 100%;
+}
